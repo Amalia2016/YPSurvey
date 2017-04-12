@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ ticker }} Stock Prices Plot</title>
+	
+		{{ js_resources | safe }}
+		{{ css_resources | safe }}
+				
+	</head>
+	<body>
+  			<h1> Generated graph for {{ ticker }}<br> <a href="/index">Back</a> </h1> <br>
+			
+			{{ plot_div | safe }}
+			{{ plot_script | safe }}
+
+		<!-- {{ tag | safe}} --> 
+	</body>
+</html>
