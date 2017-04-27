@@ -43,7 +43,7 @@ def process():
     return render_template("process.html")
 
 @app.route('/featuredesc')
-def process():
+def featuredesc():
     return render_template("featuredesc.html")
 
 if __name__ == '__main__':
