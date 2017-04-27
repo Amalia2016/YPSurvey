@@ -1,0 +1,151 @@
+group,col_num,original_col_name,short_col_name,data_type
+MUSIC PREFERENCES,0,I enjoy listening to music.,Music,Integer
+MUSIC PREFERENCES,1,I prefer.,Slow songs or fast songs,Integer
+MUSIC PREFERENCES,2,"Dance, Disco, Funk",Dance,Integer
+MUSIC PREFERENCES,3,Folk music,Folk,Integer
+MUSIC PREFERENCES,4,Country,Country,Integer
+MUSIC PREFERENCES,5,Classical,Classical music,Integer
+MUSIC PREFERENCES,6,Musicals,Musical,Integer
+MUSIC PREFERENCES,7,Pop,Pop,Integer
+MUSIC PREFERENCES,8,Rock,Rock,Integer
+MUSIC PREFERENCES,9,"Metal, Hard rock",Metal or Hardrock,Integer
+MUSIC PREFERENCES,10,Punk,Punk,Integer
+MUSIC PREFERENCES,11,"Hip hop, Rap","Hiphop, Rap",Integer
+MUSIC PREFERENCES,12,"Reggae, Ska","Reggae, Ska",Integer
+MUSIC PREFERENCES,13,"Swing, Jazz","Swing, Jazz",Integer
+MUSIC PREFERENCES,14,Rock n Roll,Rock n roll,Integer
+MUSIC PREFERENCES,15,Alternative music,Alternative,Integer
+MUSIC PREFERENCES,16,Latin,Latino,Integer
+MUSIC PREFERENCES,17,"Techno, Trance","Techno, Trance",Integer
+MUSIC PREFERENCES,18,Opera,Opera,Integer
+MOVIE PREFERENCES,19,I really enjoy watching movies.,Movies,Integer
+MOVIE PREFERENCES,20,Horror movies,Horror,Integer
+MOVIE PREFERENCES,21,Thriller movies,Thriller,Integer
+MOVIE PREFERENCES,22,Comedies,Comedy,Integer
+MOVIE PREFERENCES,23,Romantic movies,Romantic,Integer
+MOVIE PREFERENCES,24,Sci-fi movies,Sci-fi,Integer
+MOVIE PREFERENCES,25,War movies,War,Integer
+MOVIE PREFERENCES,26,Tales,Fantasy/Fairy tales,Integer
+MOVIE PREFERENCES,27,Cartoons,Animated,Integer
+MOVIE PREFERENCES,28,Documentaries,Documentary,Integer
+MOVIE PREFERENCES,29,Western movies,Western,Integer
+MOVIE PREFERENCES,30,Action movies,Action,Integer
+HOBBIES & INTERESTS,31,History,History,Integer
+HOBBIES & INTERESTS,32,Psychology,Psychology,Integer
+HOBBIES & INTERESTS,33,Politics,Politics,Integer
+HOBBIES & INTERESTS,34,Mathematics,Mathematics,Integer
+HOBBIES & INTERESTS,35,Physics,Physics,Integer
+HOBBIES & INTERESTS,36,Internet,Internet,Integer
+HOBBIES & INTERESTS,37,"PC Software, Hardware",PC,Integer
+HOBBIES & INTERESTS,38,"Economy, Management",Economy Management,Integer
+HOBBIES & INTERESTS,39,Biology,Biology,Integer
+HOBBIES & INTERESTS,40,Chemistry,Chemistry,Integer
+HOBBIES & INTERESTS,41,Poetry reading,Reading,Integer
+HOBBIES & INTERESTS,42,Geography,Geography,Integer
+HOBBIES & INTERESTS,43,Foreign languages,Foreign languages,Integer
+HOBBIES & INTERESTS,44,Medicine,Medicine,Integer
+HOBBIES & INTERESTS,45,Law,Law,Integer
+HOBBIES & INTERESTS,46,Cars,Cars,Integer
+HOBBIES & INTERESTS,47,Art,Art exhibitions,Integer
+HOBBIES & INTERESTS,48,Religion,Religion,Integer
+HOBBIES & INTERESTS,49,Outdoor activities,"Countryside, outdoors",Integer
+HOBBIES & INTERESTS,50,Dancing,Dancing,Integer
+HOBBIES & INTERESTS,51,Playing musical instruments,Musical instruments,Integer
+HOBBIES & INTERESTS,52,Poetry writing,Writing,Integer
+HOBBIES & INTERESTS,53,Sport and leisure activities,Passive sport,Integer
+HOBBIES & INTERESTS,54,Sport at competitive level,Active sport,Integer
+HOBBIES & INTERESTS,55,Gardening,Gardening,Integer
+HOBBIES & INTERESTS,56,Celebrity lifestyle,Celebrities,Integer
+HOBBIES & INTERESTS,57,Shopping,Shopping,Integer
+HOBBIES & INTERESTS,58,Science and technology,Science and technology,Integer
+HOBBIES & INTERESTS,59,Theatre,Theatre,Integer
+HOBBIES & INTERESTS,60,Socializing,Fun with friends,Integer
+HOBBIES & INTERESTS,61,Adrenaline sports,Adrenaline sports,Integer
+HOBBIES & INTERESTS,62,Pets,Pets,Integer
+PHOBIAS,63,Flying,Flying,Integer
+PHOBIAS,64,"Thunder, lightning",Storm,Integer
+PHOBIAS,65,Darkness,Darkness,Integer
+PHOBIAS,66,Heights,Heights,Integer
+PHOBIAS,67,Spiders,Spiders,Integer
+PHOBIAS,68,Snakes,Snakes,Integer
+PHOBIAS,69,"Rats, mice",Rats,Integer
+PHOBIAS,70,Ageing,Ageing,Integer
+PHOBIAS,71,Dangerous dogs,Dangerous dogs,Integer
+PHOBIAS,72,Public speaking,Fear of public speaking,Integer
+HEALTH HABITS,73,Smoking habits,Smoking,Categorical
+HEALTH HABITS,74,Drinking,Alcohol,Categorical
+HEALTH HABITS,75,I live a very healthy lifestyle.,Healthy eating,Integer
+PERSONALITY TRAITS,76,I take notice of what goes on around me.,Daily events,Integer
+PERSONALITY TRAITS,77,I try to do tasks as soon as possible and not leave them until last minute.,Prioritising workload,Integer
+PERSONALITY TRAITS,78,I always make a list so I don't forget anything.,Writing notes,Integer
+PERSONALITY TRAITS,79,I often study or work even in my spare time.,Workaholism,Integer
+PERSONALITY TRAITS,80,I look at things from all different angles before I go ahead.,Thinking ahead,Integer
+PERSONALITY TRAITS,81,I believe that bad people will suffer one day and good people will be rewarded.,Final judgement,Integer
+PERSONALITY TRAITS,82,I am reliable at work and always complete all tasks given to me.,Reliability,Integer
+PERSONALITY TRAITS,83,I always keep my promises.,Keeping promises,Integer
+PERSONALITY TRAITS,84,I can fall for someone very quickly and then completely lose interest.,Loss of interest,Integer
+PERSONALITY TRAITS,85,I would rather have lots of friends than lots of money.,Friends versus money,Integer
+PERSONALITY TRAITS,86,I always try to be the funniest one.,Funniness,Integer
+PERSONALITY TRAITS,87,I can be two faced sometimes.,Fake,Integer
+PERSONALITY TRAITS,88,I damaged things in the past when angry.,Criminal damage,Integer
+PERSONALITY TRAITS,89,I take my time to make decisions.,Decision making,Integer
+PERSONALITY TRAITS,90,I always try to vote in elections.,Elections,Integer
+PERSONALITY TRAITS,91,I often think about and regret the decisions I make.,Self-criticism,Integer
+PERSONALITY TRAITS,92,I can tell if people listen to me or not when I talk to them.,Judgment calls,Integer
+PERSONALITY TRAITS,93,I am a hypochondriac.,Hypochondria,Integer
+PERSONALITY TRAITS,94,I am emphatetic person.,Empathy,Integer
+PERSONALITY TRAITS,95,I eat because I have to. I don't enjoy food and eat as fast as I can.,Eating to survive,Integer
+PERSONALITY TRAITS,96,I try to give as much as I can to other people at Christmas.,Giving,Integer
+PERSONALITY TRAITS,97,I don't like seeing animals suffering.,Compassion to animals,Integer
+PERSONALITY TRAITS,98,I look after things I have borrowed from others.,Borrowed stuff,Integer
+PERSONALITY TRAITS,99,I feel lonely in life.,Loneliness,Integer
+PERSONALITY TRAITS,100,I used to cheat at school.,Cheating in school,Integer
+PERSONALITY TRAITS,101,I worry about my health.,Health,Integer
+PERSONALITY TRAITS,102,I wish I could change the past because of the things I have done.,Changing the past,Integer
+PERSONALITY TRAITS,103,I believe in God.,God,Integer
+PERSONALITY TRAITS,104,I always have good dreams.,Dreams,Integer
+PERSONALITY TRAITS,105,I always give to charity.,Charity,Integer
+PERSONALITY TRAITS,106,I have lots of friends.,Number of friends,Integer
+PERSONALITY TRAITS,107,Timekeeping.,Punctuality,Categorical
+PERSONALITY TRAITS,108,Do you lie to others?,Lying,Categorical
+PERSONALITY TRAITS,109,I am very patient.,Waiting,Integer
+PERSONALITY TRAITS,110,I can quickly adapt to a new environment.,New environment,Integer
+PERSONALITY TRAITS,111,My moods change quickly.,Mood swings,Integer
+PERSONALITY TRAITS,112,I am well mannered and I look after my appearance.,Appearence and gestures,Integer
+PERSONALITY TRAITS,113,I enjoy meeting new people.,Socializing,Integer
+PERSONALITY TRAITS,114,I always let other people know about my achievements.,Achievements,Integer
+PERSONALITY TRAITS,115,I think carefully before answering any important letters.,Responding to a serious letter,Integer
+PERSONALITY TRAITS,116,I enjoy childrens' company.,Children,Integer
+PERSONALITY TRAITS,117,I am not afraid to give my opinion if I feel strongly about something.,Assertiveness,Integer
+PERSONALITY TRAITS,118,I can get angry very easily.,Getting angry,Integer
+PERSONALITY TRAITS,119,I always make sure I connect with the right people.,Knowing the right people,Integer
+PERSONALITY TRAITS,120,I have to be well prepared before public speaking.,Public speaking,Integer
+PERSONALITY TRAITS,121,I will find a fault in myself if people don't like me.,Unpopularity,Integer
+PERSONALITY TRAITS,122,I cry when I feel down or things don't go the right way.,Life struggles,Integer
+PERSONALITY TRAITS,123,I am 100% happy with my life.,Happiness in life,Integer
+PERSONALITY TRAITS,124,I am always full of life and energy.,Energy levels,Integer
+PERSONALITY TRAITS,125,"I prefer big dangerous dogs to smaller, calmer dogs.",Small - big dogs,Integer
+PERSONALITY TRAITS,126,I believe all my personality traits are positive.,Personality,Integer
+PERSONALITY TRAITS,127,If I find something the doesn't belong to me I will hand it in.,Finding lost valuables,Integer
+PERSONALITY TRAITS,128,I find it very difficult to get up in the morning.,Getting up,Integer
+PERSONALITY TRAITS,129,I have many different hobbies and interests.,Interests or hobbies,Integer
+PERSONALITY TRAITS,130,I always listen to my parents' advice.,Parents' advice,Integer
+PERSONALITY TRAITS,131,I enjoy taking part in surveys.,Questionnaires or polls,Integer
+PERSONALITY TRAITS,132,How much time do you spend online?,Internet usage,Categorical
+SPENDING HABITS,133,I save all the money I can.,Finances,Integer
+SPENDING HABITS,134,I enjoy going to large shopping centres.,Shopping centres,Integer
+SPENDING HABITS,135,I prefer branded clothing to non branded.,Branded clothing,Integer
+SPENDING HABITS,136,I spend a lot of money on  partying and socializing.,Entertainment spending,Integer
+SPENDING HABITS,137,I spend a lot of money on my appearance.,Spending on looks,Integer
+SPENDING HABITS,138,I spend a lot of money on gadgets.,Spending on gadgets,Integer
+SPENDING HABITS,139,"I will hapilly pay more money for good, quality or healthy food.",Spending on healthy eating,Integer
+DEMOGRAPHICS,140,Age,Age,Integer
+DEMOGRAPHICS,141,Height,Height,Integer
+DEMOGRAPHICS,142,Weight,Weight,Integer
+DEMOGRAPHICS,143,How many siblings do you have?,Number of siblings,Integer
+DEMOGRAPHICS,144,Gender,Gender,Categorical
+DEMOGRAPHICS,145,I am,Left - right handed,Categorical
+DEMOGRAPHICS,146,Highest education achieved,Education,Categorical
+DEMOGRAPHICS,147,I am the only child,Only child,Categorical
+DEMOGRAPHICS,148,I spent most of my childhood in a,Village - town,Categorical
+DEMOGRAPHICS,149,I lived most of my childhood in a,House - block of flats,Categorical
