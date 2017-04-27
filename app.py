@@ -42,6 +42,9 @@ def dataoverview():
 def process():
     return render_template("process.html")
 
+@app.route('/featuredesc')
+def process():
+    return render_template("featuredesc.html")
 
 if __name__ == '__main__':
 #  app.run(port=33507)
