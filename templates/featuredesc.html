@@ -29,6 +29,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+  
+    	{{ js_resources | safe }}
+		{{ css_resources | safe }}
+      
   </head>
 
   <body>
@@ -42,7 +46,7 @@
         <nav>
           <ul class="nav nav-justified">
             <li class="active"><a href="/index">Home</a></li>
-            <li><a href="#">Descriptive</a></li>
+            <li><a href="/featuredesc">Descriptive</a></li>
             <li><a href="#">Visualization</a></li>
             <li><a href="#">Exploratory</a></li>
             <li><a href="#">Modeling</a></li>
@@ -58,6 +62,10 @@
 		<p></p>
 		<p></p>
         <p><a class="btn btn-lg btn-success" href="#" role="button">Process diagram</a></p>
+      </div>
+      <div>
+      		{{ plot_div | safe }}
+			{{ plot_script | safe }}
       </div>
 
     </div> <!-- /container -->

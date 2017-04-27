@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 #from wtforms import Form, StringField, BooleanField, validators
-#from compute import compute
+from descriptive import descriptive
 
 
 app = Flask(__name__)
@@ -44,7 +44,8 @@ def process():
 
 @app.route('/featuredesc')
 def featuredesc():
-    return render_template("featuredesc.html")
+    js_resources, css_resources, script, div = descriptive()
+    return render_template("featuredesc.html", js_resources=js_resources, css_resources=css_resources, plot_script=script, plot_div=div)
 
 if __name__ == '__main__':
 #  app.run(port=33507)
