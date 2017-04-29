@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 #from wtforms import Form, StringField, BooleanField, validators
 from descriptive import descriptive
-
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -42,14 +42,19 @@ def dataoverview():
 def process():
     return render_template("process.html")
 
-@app.route('/featuredesc')
+@app.route('/featuredesc', methods=['GET', 'POST'])
 def featuredesc():
-    js_resources, css_resources, script, div = descriptive()
-    return render_template("featuredesc.html", js_resources=js_resources, css_resources=css_resources, plot_script=script, plot_div=div)
+    df = pd.read_csv("responses.csv")
+    df_cols_transf = pd.read_csv("columns_transf.csv")
+    js_resources, css_resources, script1, div1, script2, div2, script3, div3, script4, div4, script5, div5, script6, div6, script7, div7, script8, div8, script9, div9 = descriptive(df, df_cols_transf)
+    return render_template("featuredesc.html", js_resources=js_resources, css_resources=css_resources, 
+            plot_script1=script1, plot_div1=div1, plot_script2=script2, plot_div2=div2, plot_script3=script3, plot_div3=div3,
+            plot_script4=script4, plot_div4=div4, plot_script5=script5, plot_div5=div5, plot_script6=script6, plot_div6=div6,
+            plot_script7=script7, plot_div7=div7, plot_script8=script8, plot_div8=div8, plot_script9=script9, plot_div9=div9)
 
 if __name__ == '__main__':
 #  app.run(port=33507)
 #   port = int(os.environ.get("PORT", 5000))
 #    app.run(host='0.0.0.0')
-    app.run()
+    app.run(debug=True)
 

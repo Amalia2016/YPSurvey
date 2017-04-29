@@ -63,10 +63,85 @@
 		<p></p>
         <p><a class="btn btn-lg btn-success" href="#" role="button">Process diagram</a></p>
       </div>
-      <div>
-      		{{ plot_div | safe }}
-			{{ plot_script | safe }}
-      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Gender</h2>
+    		  <ul>
+    		  <li><p>We can see approx. 50% more female respondents than male.</p></li>
+               	{{ plot_div1 | safe }}
+        			{{ plot_script1 | safe }}
+    		  </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Age</h2>
+    		  <ul>
+             <li><p>We can see most of the respondents are in the age range of 18-22.</p></li>
+                 {{ plot_div2 | safe }}
+        			{{ plot_script2 | safe }}
+    		  </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Education</h2>
+    		  <ul>
+    		  <li><p>We can see that most of the respondents have achieved secondary school.</p></li>
+                 {{ plot_div3 | safe }}
+        			{{ plot_script3 | safe }}
+            </ul>
+        </div>
+      </div> <!-- /row -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Save all the money.</h2>
+    		  <ul>
+    		  <li><p>Predictive modeling for spending habits.</p></li>
+                 {{ plot_div4 | safe }}
+        			{{ plot_script4 | safe }}
+    		  </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Prefer branded clothing.</h2>
+    		  <ul>
+    		  <li><p>Predictive modeling for spending habits.</p></li>
+                 {{ plot_div5 | safe }}
+        			{{ plot_script5 | safe }}
+    		  </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Spend a lot on socializing.</h2>
+    		  <ul>
+    		  <li><p>Predictive modeling for spending habits.</p></li>
+                 {{ plot_div6 | safe }}
+        			{{ plot_script6 | safe }}
+    		  </ul>
+        </div>
+      </div> <!-- /row -->
+      
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Spend a lot appearance.</h2>
+    		  <ul>
+    		  <li><p>Predictive modeling for spending habits.</p></li>
+                 {{ plot_div7 | safe }}
+        			{{ plot_script7 | safe }}
+    		  </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Spend a lot on gadgets.</h2>
+    		  <ul>
+    		  <li><p>Predictive modeling for spending habits.</p></li>
+                 {{ plot_div8 | safe }}
+        			{{ plot_script8 | safe }}
+    		  </ul>
+        </div>
+        <div class="col-lg-4">
+          <h2>Spend a lot quality food.</h2>
+    		  <ul>
+    		  <li><p>Predictive modeling for spending habits.</p></li>
+                 {{ plot_div9 | safe }}
+        			{{ plot_script9 | safe }}
+    		  </ul>
+        </div>
+      </div> <!-- /row -->
 
     </div> <!-- /container -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
