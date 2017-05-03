@@ -12,5 +12,4 @@ bokeh
 wtforms
 matplotlib
 seaborn
-requests
 scipy
