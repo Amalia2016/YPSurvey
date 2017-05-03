@@ -9,7 +9,6 @@ Created on Tue Mar 21 22:31:14 2017
 import simplejson as json
 import urllib2
 import requests
-
 import numpy as np
 import scipy as sc
 import pandas as pd
