@@ -45,16 +45,17 @@ def process():
 @app.route('/featuredesc', methods=['GET', 'POST'])
 def featuredesc():
     df = pd.read_csv("responses.csv")
-    df_cols_transf = pd.read_csv("columns_transf.csv")
-    js_resources, css_resources, script1, div1, script2, div2, script3, div3, script4, div4, script5, div5, script6, div6, script7, div7, script8, div8, script9, div9 = descriptive(df, df_cols_transf)
+    js_resources, css_resources, script1, div1, script2, div2, script3, div3, script4, div4, script5, div5, script6, div6, script7, div7, script8, div8, script9, div9, script10, div10, script11, div11, script12, div12 = descriptive(df)
     return render_template("featuredesc.html", js_resources=js_resources, css_resources=css_resources, 
             plot_script1=script1, plot_div1=div1, plot_script2=script2, plot_div2=div2, plot_script3=script3, plot_div3=div3,
             plot_script4=script4, plot_div4=div4, plot_script5=script5, plot_div5=div5, plot_script6=script6, plot_div6=div6,
-            plot_script7=script7, plot_div7=div7, plot_script8=script8, plot_div8=div8, plot_script9=script9, plot_div9=div9)
+            plot_script7=script7, plot_div7=div7, plot_script8=script8, plot_div8=div8, plot_script9=script9, plot_div9=div9,
+            plot_script10=script10, plot_div10=div10, plot_script11=script11, plot_div11=div11, plot_script12=script12, plot_div12=div12)
 
 if __name__ == '__main__':
 #  app.run(port=33507)
 #   port = int(os.environ.get("PORT", 5000))
 #    app.run(host='0.0.0.0')
-    app.run(debug=True)
+#    app.run(debug=True)
+    app.run()
 
