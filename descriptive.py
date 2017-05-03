@@ -29,6 +29,8 @@ from bokeh.charts import Bar, Histogram, output_file, show, defaults
 from bokeh.charts.attributes import cat, color
 from bokeh.charts.operations import blend
 from bokeh.charts.utils import df_from_json
+from bokeh.charts import defaults
+
 #from bokeh.util.browser import view
 #from jinja2 import Template
 
@@ -39,24 +41,24 @@ def descriptive(df):
     demographics0 = df.iloc[:,140:150]
     
     df2 = pd.concat([demographics0, spending0, health0], axis=1).reset_index(drop=True)
-    df2 = df2.dropna()
-    pd.options.display.float_format = '{:,.0f}'.format
+    df2.dropna(inplace=True)
+    age = df2[['Age']].copy()
+    age.dropna(inplace=True)
 
-    
+    #pd.options.display.float_format = '{:,.0f}'.format
+
     dic_smoking = {'never smoked': '1 - never smoked', 'tried smoking':'2 - tried smoking', 'former smoker': '3 - former smoker', 'current smoker': '4 - current smoker'}
     dic_alcohol = {'never':'1 - never', 'social drinker': '2 - social drinker', 'drink a lot': '3 - drink a lot'}
     df2['Alcohol'].replace(dic_alcohol, inplace = True)
     df2['Smoking'].replace(dic_smoking, inplace = True)
    
-    from bokeh.charts import defaults
-
     defaults.width = 350
     defaults.height = 350
     defaults.tools = False
 
     p_gen = Bar(df2, label = 'Gender', color=color(columns='Gender', palette=['Red', 'Green', 'Yellow'],
                       sort=False), title="Frequencies by Gender", legend = 'top_right')
-    p_age = Histogram(df2, values = 'Age', bins = 10, title="Frequencies by Age", color = 'Blue')
+    p_age = Histogram(age, values = 'Age', bins = 10, title="Frequencies by Age", color = 'Blue')
     p_edu = Bar(df2, label = 'Education', title="Frequencies by Education Level", legend=False, color='Orange')
    
    
