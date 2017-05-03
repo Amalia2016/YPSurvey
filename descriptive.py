@@ -11,7 +11,7 @@ import urllib2
 import requests
 
 #import numpy as np
-import scipy as sc
+#import scipy as sc
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
