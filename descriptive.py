@@ -6,15 +6,15 @@ Created on Tue Mar 21 22:31:14 2017
 """
 
 #import matplotlib.pyplot as plt
-import simplejson as json
-import urllib2
-import requests
+#import simplejson as json
+#import urllib2
+#import requests
 import numpy as np
 import scipy as sc
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-#import requests
+
 #import quandl
 
 #import io

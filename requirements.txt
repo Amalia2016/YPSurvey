@@ -10,3 +10,7 @@ numpy
 pandas
 bokeh
 wtforms
+matplotlib
+seaborn
+requests
+scipy
