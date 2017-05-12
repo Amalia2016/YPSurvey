@@ -1,0 +1,59 @@
+ensemble_pipe = Pipeline([
+        ('selectcol', ColumnSelectTransformer(mycolumns)),
+        ('ensemble', EnsembleTransformer(
+                linear_model.LogisticRegression(),
+                (ensemble.RandomForestRegressor(min_samples_leaf=20)))),
+        ('blend', linear_model.LogisticRegression())
+    ])
+
+
+mycolumns = ['Keeping promises', 'Prioritising workload', 'Decision making', 'Getting up', 'Small - big dogs', 'Fun with friends']	
+	
+Score:  0.702564102564
+best_score     :  0.667307692308
+best_params    :  {}
+best_estimator :  Pipeline(steps=[('selectcol', ColumnSelectTransformer(col_names=['Keeping promises', 'Prioritising workload', 'Decision making', 'Getting up', 'Small - big dogs', 'Fun with friends'])), ('ensemble', EnsembleTransformer(base_estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True...ty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False))])
+scorer         :  <function _passthrough_scorer at 0x000000000B6FE2E8>
+accurace score :  0.702564102564
+
+mycolumns = ['Getting up','Prioritising workload','Entertainment spending','Spending on looks','Thinking ahead',
+'Decision making','Questionnaires or polls','Public speaking','Keeping promises','Reliability']
+
+Score:  0.702564102564
+best_score     :  0.702884615385
+best_params    :  {}
+best_estimator :  Pipeline(steps=[('selectcol', ColumnSelectTransformer(col_names=['Getting up', 'Prioritising workload', 'Entertainment spending', 'Spending on looks', 'Thinking ahead', 'Decision making', 'Questionnaires or polls', 'Public speaking', 'Keeping promises', 'Reliability'])), ('ensemble', EnsembleTransformer(base...ty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False))])
+scorer         :  <function _passthrough_scorer at 0x000000000B6FE2E8>
+accurace score :  0.702564102564
+
+
+
+
+Logistic Regression
+
+logreg_pipe = Pipeline([
+        ('selectcol', ColumnSelectTransformer(mycolumns)),
+        ('logpred', LogisticRegression())])
+
+mycolumns = ['Keeping promises', 'Prioritising workload', 'Decision making', 'Getting up', 'Small - big dogs', 'Fun with friends']
+
+Score:  0.717948717949
+best_score     :  0.675961538462
+best_params    :  {'logpred__C': 1}
+best_estimator :  Pipeline(steps=[('selectcol', ColumnSelectTransformer(col_names=['Keeping promises', 'Prioritising workload', 'Decision making', 'Getting up', 'Small - big dogs', 'Fun with friends'])), ('logpred', LogisticRegression(C=1, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False))])
+accurace score :  0.717948717949
+
+mycolumns = ['Getting up','Prioritising workload','Entertainment spending','Spending on looks','Thinking ahead',
+'Decision making','Questionnaires or polls','Public speaking','Keeping promises','Reliability']
+
+Score:  0.712820512821
+best_score     :  0.703846153846
+best_params    :  {'logpred__C': 1}
+best_estimator :  Pipeline(steps=[('selectcol', ColumnSelectTransformer(col_names=['Getting up', 'Prioritising workload', 'Entertainment spending', 'Spending on looks', 'Thinking ahead', 'Decision making', 'Questionnaires or polls', 'Public speaking', 'Keeping promises', 'Reliability'])), ('logpred', LogisticRegression(C=1, c...ty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False))])
+accurace score :  0.712820512821

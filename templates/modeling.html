@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "layout.html" %}
+
+{% block content %}
+	        <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Modeling</h1>
+        <h2> Feature: Finances (Savers) </h2>
+        <p class="lead"></p>
+        <p><a class="btn btn-lg btn-success" href="/index" role="button">Back</a></p>
+    </div>
+       
+     <div class="row">
+     
+        <div class="col-lg-4">
+          <h2>KNeighborsRegressor</h2>
+    		  <ul>
+        		  <p><a class="btn btn-primary" href="/spendingcorr" role="button" style="display: none;">View details &raquo;</a></p>
+                <p class="lead"> <li class="active">Extremely bad fit, even using almost all features.</li></p>
+                <p class="lead"> <li class="active">best_score     :  0.038966531783</li></p>
+            </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h2>LogisticRegression</h2>
+    		  <ul>
+        		  <p><a class="btn btn-primary" href="/healthcorr" role="button" style="display: none;">View details &raquo;</a></p>
+                <p class="lead"> <li class="active">features = ['Getting up','Prioritising workload','Entertainment spending','Spending on looks','Thinking ahead',
+'Decision making','Questionnaires or polls','Public speaking','Keeping promises','Reliability'].</li></p>
+                <p class="lead"> <li class="active">best_score     :  0.703846153846</li></p>
+                <p class="lead"> <li class="active">accurace score :  0.712820512821</li></p>
+                <p class="lead"> <li class="active">logreg_pipe = Pipeline([
+        ('selectcol', ColumnSelectTransformer(mycolumns)),
+        ('logpred', LogisticRegression())])</li></p>                 
+                <p class="lead"> <li class="active">best_estimator :  Pipeline(steps=[('selectcol', ColumnSelectTransformer(col_names=['Getting up', 'Prioritising workload', 'Entertainment spending', 'Spending on looks', 'Thinking ahead', 'Decision making', 'Questionnaires or polls', 'Public speaking', 'Keeping promises', 'Reliability'])), ('logpred', LogisticRegression(C=1, c...ty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False))])</li></p>   
+                <p class="lead"> <li class="active">Parameters not yet tuned.</li></p>
+            </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h2>LogisticRegression + RandomForestRegressor (for errors)</h2>
+    		  <ul>
+                <p><a class="btn btn-primary" href="/demographicscorr" role="button" style="display: none;">View details &raquo;</a></p>
+                <p class="lead"><li class="active">features = ['Getting up','Prioritising workload','Entertainment spending','Spending on looks','Thinking ahead',
+'Decision making','Questionnaires or polls','Public speaking','Keeping promises','Reliability']</li></p>        
+                <p class="lead"><li class="active">best_score     :  0.702884615385 </li></p>
+                <p class="lead"><li class="active">accurace score :  0.702564102564 </li></p>
+                <p class="lead"> <li class="active">ensemble_pipe = Pipeline([
+        ('selectcol', ColumnSelectTransformer(mycolumns)),
+        ('ensemble', EnsembleTransformer(
+                linear_model.LogisticRegression(),
+                (ensemble.RandomForestRegressor(min_samples_leaf=20)))),
+        ('blend', linear_model.LogisticRegression())
+    ])</li></p> 
+                <p class="lead"> <li class="active">best_estimator :  Pipeline(steps=[('selectcol', ColumnSelectTransformer(col_names=['Getting up', 'Prioritising workload', 'Entertainment spending', 'Spending on looks', 'Thinking ahead', 'Decision making', 'Questionnaires or polls', 'Public speaking', 'Keeping promises', 'Reliability'])), ('ensemble', EnsembleTransformer(base...ty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False))])</li></p> 
+                <p class="lead"> <li class="active">Parameters not yet tuned.</li></p>   
+    		  </ul>
+        </div>
+     </div>
+
+          		   
+{% endblock %}
+
+</html>

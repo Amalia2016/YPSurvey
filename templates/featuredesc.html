@@ -46,10 +46,10 @@
         <nav>
           <ul class="nav nav-justified">
             <li class="active"><a href="/index">Home</a></li>
-            <li><a href="/featuredesc">Descriptive</a></li>
-            <li><a href="#">Visualization</a></li>
-            <li><a href="#">Exploratory</a></li>
-            <li><a href="#">Modeling</a></li>
+            <li class="active"><a href="/featuredesc_new">Descriptive</a></li>
+            <li><a href="/correlations">Correlations</a></li>
+            <li><a href="/exploratory">Exploratory</a></li>
+            <li><a href="/modeling">Modeling</a></li>
             <li><a href="#">Conclusions</a></li>
           </ul>
         </nav>
@@ -59,15 +59,13 @@
       <div class="jumbotron">
         <h1>Descriptive Analysis</h1>
         <p class="lead"></p>
-		<p></p>
-		<p></p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Process diagram</a></p>
+        <p><a class="btn btn-lg btn-success" href="/process" role="button">Back</a></p>
       </div>
       <div class="row">
         <div class="col-lg-4">
           <h2>Gender</h2>
     		  <ul>
-    		  <li><p>We can see approx. 50% more female respondents than male.</p></li>
+    		  <li><p>We can see approx. 50% more female respondents than male. This fact has an influence in many other features' distributions.</p></li>
                	{{ plot_div1 | safe }}
         			{{ plot_script1 | safe }}
     		  </ul>
@@ -91,25 +89,25 @@
       </div> <!-- /row -->
       <div class="row">
         <div class="col-lg-4">
-          <h2>Save all the money.</h2>
+          <h2>Spend - Save all</h2>
     		  <ul>
-    		  <li><p></p></li>
+    		  <li><p>The shape of distribution is similar by gender, although on the extreme of strongly disagree on saving, male are more prevalent.</p></li>
                  {{ plot_div4 | safe }}
         			{{ plot_script4 | safe }}
     		  </ul>
         </div>
         <div class="col-lg-4">
-          <h2>Prefer branded clothing.</h2>
+          <h2>Spend - Branded clothing.</h2>
     		  <ul>
-    		  <li><p></p></li>
+    		  <li><p>The shape of the distribution in case of males is leaning towards more spending on branded clothes.</p></li>
                  {{ plot_div5 | safe }}
         			{{ plot_script5 | safe }}
     		  </ul>
         </div>
         <div class="col-lg-4">
-          <h2>Spend a lot on socializing.</h2>
+          <h2>Spend - Entertainment.</h2>
     		  <ul>
-    		  <li><p></p></li>
+    		  <li><p>The shape of the distribution in case of males is leaning towards more spending on socializaing/enternainment.</p></li>
                  {{ plot_div6 | safe }}
         			{{ plot_script6 | safe }}
     		  </ul>
@@ -118,25 +116,25 @@
       
       <div class="row">
         <div class="col-lg-4">
-          <h2>Spend a lot appearance.</h2>
+          <h2>Spend - Appearance.</h2>
     		  <ul>
-    		  <li><p></p></li>
+    		  <li><p>The shape of the distribution in case of females is leaning a bit more towards more spending on apprearance/looks.</p></li>
                  {{ plot_div7 | safe }}
         			{{ plot_script7 | safe }}
     		  </ul>
         </div>
         <div class="col-lg-4">
-          <h2>Spend a lot on gadgets.</h2>
+          <h2>Spend - Gadgets.</h2>
     		  <ul>
-    		  <li><p></p></li>
+    		  <li><p>The shape of the distribution in case of males is leaning a lot more towards more spending on gadgets (opposite to females).</p></li>
                  {{ plot_div8 | safe }}
         			{{ plot_script8 | safe }}
     		  </ul>
         </div>
         <div class="col-lg-4">
-          <h2>Pay more on healthy food.</h2>
+          <h2>Spend - Healthy food.</h2>
     		  <ul>
-    		  <li><p></p></li>
+    		  <li><p>The shape of distribution is similar for both genders.</p></li>
                  {{ plot_div9 | safe }}
         			{{ plot_script9 | safe }}
     		  </ul>
@@ -147,23 +145,23 @@
         <div class="col-lg-4">
           <h2>Smoking habits.</h2>
     		  <ul>
-    		  <li><p></p></li>
+    		  <li><p>The shape of distribution is similar for both genders.</p></li>
                  {{ plot_div10 | safe }}
         			{{ plot_script10 | safe }}
     		  </ul>
         </div>
         <div class="col-lg-4">
-          <h2>Drinking alcohol.</h2>
+          <h2>Drinking habits.</h2>
     		  <ul>
-    		  <li><p></p></li>
+    		  <li><p>The shape of distribution is similar for both genders, although on the extreme, male gender is more prevalent.</p></li>
                  {{ plot_div11 | safe }}
         			{{ plot_script11 | safe }}
     		  </ul>
         </div>
         <div class="col-lg-4">
-          <h2>Live a healthy lifestyle.</h2>
+          <h2>Healthy lifestyle.</h2>
     		  <ul>
-    		  <li><p></p></li>
+    		  <li><p>The shape of distribution is similar for both genders.</p></li>
                  {{ plot_div12 | safe }}
         			{{ plot_script12 | safe }}
     		  </ul>
