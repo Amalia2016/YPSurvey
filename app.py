@@ -24,6 +24,10 @@ def main():
 def index():
     return render_template("index.html")
 
+@app.route('/project', methods=['GET', 'POST'])
+def project():
+    return render_template("project.html")
+
 @app.route('/aboutsource', methods=['GET', 'POST'])
 def aboutsource():
     return render_template("aboutsource.html")
@@ -51,6 +55,10 @@ def exploratory():
 @app.route('/modeling')
 def modeling():
     return render_template("modeling.html")
+
+@app.route('/modeldiagram')
+def modeldiagram():
+    return render_template("modeldiagram.html")
 
 @app.route('/correlations')
 def correlations():

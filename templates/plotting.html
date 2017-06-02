@@ -42,24 +42,26 @@
       <!-- The justified navigation menu is meant for single line per list item.
            Multiple lines will require custom code not provided by Bootstrap. -->
       <div class="masthead">
-        <h3 class="text-muted">Capstone Project - Amalia Gallardo</h3>
+        <h3 class="text-muted">Young People Survey Capstone Project - 
+            <a href="https://www.linkedin.com/in/amalia-gallardo-rivera-a7551110/">Amalia Gallardo</a></h3>
         <nav>
           <ul class="nav nav-justified">
             <li class="active"><a href="/index">Home</a></li>
-            <li class="active"><a href="/featuredesc_new">Descriptive</a></li>
-            <li><a href="/correlations">Correlations</a></li>
-            <li><a href="/exploratory">Exploratory</a></li>
-            <li><a href="/modeling">Modeling</a></li>
-            <li><a href="#">Conclusions</a></li>
+            <li class="active"><a href="/project">Project</a></li>
+            <li class="active"><a href="/featuredesc_new">Features</a></li>
+            <li class="active"><a href="/correlations">Correlations</a></li>
+            <li class="active"><a href="/processdiagram">Process</a></li>
+            <li class="active"><a href="/modeldiagram">Model</a></li>
+            <li class="active"><a href="{{ url_for('aboutsource') }}">Data Source</a></li>
           </ul>
         </nav>
       </div>
 
 	        <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>Descriptive Analysis</h1>
+        <h1>Features Description</h1>
         <h1> {{ title }} </h1>
-        <p> Legend (for numeric categories): {{ legend }}</p>
+        <p> Legend (for numeric ordinal categories 1-5): {{ legend }}</p>
         <p><a class="btn btn-lg btn-success" href="/featuredesc_new" role="button">Back</a></p>
       </div>
       

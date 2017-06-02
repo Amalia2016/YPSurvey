@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "layout.html" %}
+
+{% block content %}
+	        <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Model</h1>
+        <h2> Feature: Finances (Savers) </h2>
+        <p class="lead"></p>
+        <p><a class="btn btn-lg btn-success" href="/index" role="button">Back</a></p>
+        <p class="lead"> <img src="/static/ModelingPipeline.jpg" alt="Modeling_Pipeline" style="width:608px;height:456px;"></p>
+    </div>
+       
+     <div class="row">
+     
+        <div class="col-lg-4">
+          <h2>Label Variable</h2>
+    		  <ul>
+        		  <p><a class="btn btn-primary" href="/spendingcorr" role="button" style="display: none;">View details &raquo;</a></p>
+                <p class="lead"> <li class="active">Question: I save all the money I can. </li></p> 
+                <p class="lead"> <li class="active">Responses: Strongly disagree 1-2-3-4-5 Strongly agree</li></p> 
+                <p class="lead"> <li class="active">Original ordinal values transformed to binary values to represent Savers.</li></p>
+                <p class="lead"> <li class="active">Values: 1-3 ---> Value: 0, Values: 4-5: ---> Value: 1</li></p>
+                <p class="lead"><li class="active">Model: Logistic Regression</li></p>  
+            </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h2>Features Selected</h2>
+    		  <ul>
+        		  <p><a class="btn btn-primary" href="/healthcorr" role="button" style="display: none;">View details &raquo;</a></p>
+                <p class="lead"> <li class="active">Prioritising workload - Positively correlated</li></p>
+                <p class="lead"> <li class="active">Keeping promises - Positively correlated</li></p>
+                <p class="lead"> <li class="active">Decision making - Positively correlated</li></p>
+                <p class="lead"> <li class="active">Thinking ahead - Positively correlated</li></p>
+                <p class="lead"> <li class="active">Questionnaires or polls - Positively correlated</li></p>
+                <p class="lead"> <li class="active">Getting up - Negatively correlated</li></p>
+                <p class="lead"> <li class="active">Entertainment spending - Negatively correlated</li></p>
+                <p class="lead"> <li class="active">Spending on looks - Negatively correlated</li></p>
+                <p class="lead"> <li class="active">Fun with friends - Negatively correlated</li></p>
+                <p class="lead"> <li class="active">i am often running late - Negatively correlated</li></p>
+            </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h2>Feature Description</h2>
+             <ul>
+        		  <p><a class="btn btn-primary" href="/healthcorr" role="button" style="display: none;">View details &raquo;</a></p>
+                <p class="lead"> <li class="active">Q: I try to do tasks as soon as possible and not leave them until last minute., R: Strongly disagree 1-2-3-4-5 Strongly agree</li></p>
+                <p class="lead"> <li class="active">Q: I always keep my promises., R: Strongly disagree 1-2-3-4-5 Strongly agree</li></p>
+                <p class="lead"> <li class="active">Q: I take my time to make decisions., R: Strongly disagree 1-2-3-4-5 Strongly agree</li></p>
+                <p class="lead"> <li class="active">Q: I look at things from all different angles before I go ahead., R: Strongly disagree 1-2-3-4-5 Strongly agree</li></p>
+                <p class="lead"> <li class="active">Q: I enjoy taking part in surveys., R: Strongly disagree 1-2-3-4-5 Strongly agree</li></p>
+                <p class="lead"> <li class="active">Q: I find it very difficult to get up in the morning., R: Strongly disagree 1-2-3-4-5 Strongly agree</li></p>
+                <p class="lead"> <li class="active">Q: I spend a lot of money on  partying and socializing., R: Strongly disagree 1-2-3-4-5 Strongly agree</li></p>
+                <p class="lead"> <li class="active">Q: I spend a lot of money on my appearance., R: Strongly disagree 1-2-3-4-5 Strongly agree</li></p>
+                <p class="lead"> <li class="active">Q: Socializing. R: Not interested 1-2-3-4-5 Very interested</li></p>
+                <p class="lead"> <li class="active">Q: Timekeeping. R: I am often early. - I am always on time. - I am often running late.</li></p>
+            </ul>
+        </div>
+     </div>
+
+          		   
+{% endblock %}
+
+</html>
