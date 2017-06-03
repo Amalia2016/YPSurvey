@@ -24,6 +24,10 @@ def main():
 def index():
     return render_template("index.html")
 
+@app.route('/profile', methods=['GET', 'POST'])
+def profile():
+    return render_template("profile.html")
+
 @app.route('/project', methods=['GET', 'POST'])
 def project():
     return render_template("project.html")
